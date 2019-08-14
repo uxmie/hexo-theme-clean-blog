@@ -220,7 +220,7 @@ $ hexo new page "categories"
 - Edit the newly created page and set page type to `categories` in the front matter.
 
 ```
-title: All tags
+title: All categories
 type: "categories"
 ```
 
