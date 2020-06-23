@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <!-- MathJax 3 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <!--Description-->
 
     <%
@@ -89,10 +93,10 @@
     }
     title.push(config.title);
     %>
-    <title><%= title.join(' - ') %></title>
+    <title><%= title.join(' | ') %></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>-->
 
     <!-- Custom CSS -->
     <%- css('css/style.css') %>
@@ -119,5 +123,6 @@
     <% if (theme.favicon) { %>
     <link rel="icon" href="<%- theme.favicon %>"/>
     <% } %>
+
 
 </head>

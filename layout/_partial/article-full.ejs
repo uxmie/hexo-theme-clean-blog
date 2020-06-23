@@ -43,11 +43,11 @@
                         <%- partial('article-categories', {item: item}) %>
                     <% } %>
                 </div>
+                <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
                 <div class="col-lg-4 col-md-5 post-categories">
-                    <% if (item.tags && item.tags.length && item.categories && item.categories.length){ %>
                         <%- partial('article-categories', {item: item}) %>
-                    <% } %>
                 </div>
+                <% } %>
             <% } %>
 
             <!-- Gallery -->
@@ -56,7 +56,7 @@
             <% } %>
 
             <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 main-text">
                 <%- item.content %>
 
                 <% if(theme.addthis) { %>
