@@ -1,6 +1,18 @@
 article
   .container
     .row
+      p
+        text-align justify
+        text-indent 0em
+        margin 0px
+        margin-top 0.8em
+      .inset-math-right
+        float right
+        margin-left 2em
+      .inset-math-left
+        float left
+        margin-right 2em
+        
       // Responsive Images
       img
         max-width 100% !important
@@ -48,6 +60,10 @@ article
       .main-text
         background-color text-bg-color
         padding-top: 50px
+        padding-bottom: 50px
+        a
+          text-decoration: underline;
+          color: darken(brand-primary, 20%);
       .pullquote
         float right
         border none
@@ -58,6 +74,15 @@ article
         font-size 1.5em
         &.left
           float left
+      table
+        margin-left: auto
+        margin-right: auto
+        margin-top: 1em
+        margin-bottom: 1em
+      td, th
+        border-top: 1px solid gray-dark
+        border-bottom: 1px solid gray-dark
+        padding: 0.2em 0.3em 0.2em 0.3em
 
 figure.highlight
   background #eee
@@ -86,7 +111,7 @@ figure.highlight
     background none
 
   table
-    margin-top 0
+    margin-top 10px
     border-spacing 0
 
     .gutter
@@ -105,6 +130,8 @@ figure.highlight
 
     .line.marked
       background: #d6d6d6
+    
+    
 
 pre
   // Theme: Solarized - Light
